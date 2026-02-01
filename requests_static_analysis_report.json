@@ -1,0 +1,2067 @@
+{
+    "summary": {
+        "total_modules": 5,
+        "analyzed_modules": [
+            "sessions.py",
+            "models.py",
+            "api.py",
+            "adapters.py",
+            "exceptions.py"
+        ],
+        "overall_risk": "高"
+    },
+    "modules": {
+        "sessions.py": {
+            "path": "C:\\Users\\33086\\PyCharmMiscProject\\.venv\\Lib\\site-packages\\requests\\sessions.py",
+            "basic": {
+                "dependencies": {
+                    "internal": [],
+                    "external": [
+                        "_internal_utils",
+                        "adapters",
+                        "auth",
+                        "collections",
+                        "compat",
+                        "cookies",
+                        "datetime",
+                        "exceptions",
+                        "hooks",
+                        "models",
+                        "os",
+                        "status_codes",
+                        "structures",
+                        "sys",
+                        "time",
+                        "utils"
+                    ]
+                },
+                "functions": [
+                    {
+                        "name": "merge_setting",
+                        "line_no": 61,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "merge_hooks",
+                        "line_no": 91,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get_redirect_target",
+                        "line_no": 107,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "get_redirect_target",
+                        "line_no": 107,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "should_strip_auth",
+                        "line_no": 127,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "should_strip_auth",
+                        "line_no": 127,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "resolve_redirects",
+                        "line_no": 159,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "resolve_redirects",
+                        "line_no": 159,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "rebuild_auth",
+                        "line_no": 282,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "rebuild_auth",
+                        "line_no": 282,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "rebuild_proxies",
+                        "line_no": 302,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "rebuild_proxies",
+                        "line_no": 302,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "rebuild_method",
+                        "line_no": 333,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "rebuild_method",
+                        "line_no": 333,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 390,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 390,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__enter__",
+                        "line_no": 451,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__enter__",
+                        "line_no": 451,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__exit__",
+                        "line_no": 454,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__exit__",
+                        "line_no": 454,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_request",
+                        "line_no": 457,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_request",
+                        "line_no": 457,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "request",
+                        "line_no": 500,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "request",
+                        "line_no": 500,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get",
+                        "line_no": 593,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "get",
+                        "line_no": 593,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "options",
+                        "line_no": 604,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "options",
+                        "line_no": 604,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "head",
+                        "line_no": 615,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "head",
+                        "line_no": 615,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "post",
+                        "line_no": 626,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "post",
+                        "line_no": 626,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "put",
+                        "line_no": 639,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "put",
+                        "line_no": 639,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "patch",
+                        "line_no": 651,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "patch",
+                        "line_no": 651,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "delete",
+                        "line_no": 663,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "delete",
+                        "line_no": 663,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 673,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 673,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "merge_environment_settings",
+                        "line_no": 750,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "merge_environment_settings",
+                        "line_no": 750,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get_adapter",
+                        "line_no": 781,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "get_adapter",
+                        "line_no": 781,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 794,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 794,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "mount",
+                        "line_no": 799,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "mount",
+                        "line_no": 799,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 810,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 810,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 814,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 814,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "session",
+                        "line_no": 819,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    }
+                ],
+                "code_size": {
+                    "total_lines": 831,
+                    "non_blank_lines": 566,
+                    "func_count": 53
+                },
+                "naming_issues": []
+            },
+            "pep8": {
+                "total_issues": 0,
+                "issues": [],
+                "severity": "低"
+            },
+            "complexity": {
+                "cyclomatic_complexity": [
+                    {
+                        "function": "M",
+                        "complexity": 159,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 673,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 127,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "merge_setting",
+                        "complexity": 61,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "SessionRedirectMixin",
+                        "complexity": 106,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 750,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 333,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 302,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 457,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "merge_hooks",
+                        "complexity": 91,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 282,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 500,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 799,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "Session",
+                        "complexity": 356,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 781,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 107,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 794,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 810,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 814,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "session",
+                        "complexity": 819,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 390,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 451,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 454,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 593,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 604,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 615,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 626,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 639,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 651,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 663,
+                        "risk": "高"
+                    }
+                ],
+                "max_complexity": 819,
+                "sloc": {},
+                "complexity_risk": "高"
+            },
+            "security": {
+                "total_issues": 0,
+                "issues": [],
+                "risk": "低"
+            }
+        },
+        "models.py": {
+            "path": "C:\\Users\\33086\\PyCharmMiscProject\\.venv\\Lib\\site-packages\\requests\\models.py",
+            "basic": {
+                "dependencies": {
+                    "internal": [],
+                    "external": [
+                        "_internal_utils",
+                        "auth",
+                        "compat",
+                        "cookies",
+                        "datetime",
+                        "encodings",
+                        "exceptions",
+                        "hooks",
+                        "idna",
+                        "io",
+                        "status_codes",
+                        "structures",
+                        "urllib3",
+                        "utils"
+                    ]
+                },
+                "functions": [
+                    {
+                        "name": "path_url",
+                        "line_no": 86,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "path_url",
+                        "line_no": 86,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "_encode_params",
+                        "line_no": 107,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "_encode_params",
+                        "line_no": 107,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "_encode_files",
+                        "line_no": 137,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "_encode_files",
+                        "line_no": 137,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "register_hook",
+                        "line_no": 207,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "register_hook",
+                        "line_no": 207,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "deregister_hook",
+                        "line_no": 218,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "deregister_hook",
+                        "line_no": 218,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 258,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 258,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 292,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 292,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare",
+                        "line_no": 295,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare",
+                        "line_no": 295,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 334,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 334,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare",
+                        "line_no": 351,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare",
+                        "line_no": 351,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 379,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 379,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "copy",
+                        "line_no": 382,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "copy",
+                        "line_no": 382,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_method",
+                        "line_no": 393,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_method",
+                        "line_no": 393,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "_get_idna_encoded_host",
+                        "line_no": 400,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "_get_idna_encoded_host",
+                        "line_no": 400,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_url",
+                        "line_no": 409,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_url",
+                        "line_no": 409,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_headers",
+                        "line_no": 483,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_headers",
+                        "line_no": 483,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_body",
+                        "line_no": 494,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_body",
+                        "line_no": 494,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_content_length",
+                        "line_no": 572,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_content_length",
+                        "line_no": 572,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_auth",
+                        "line_no": 588,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_auth",
+                        "line_no": 588,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_cookies",
+                        "line_no": 610,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_cookies",
+                        "line_no": 610,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "prepare_hooks",
+                        "line_no": 630,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "prepare_hooks",
+                        "line_no": 630,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 658,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 658,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__enter__",
+                        "line_no": 705,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__enter__",
+                        "line_no": 705,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__exit__",
+                        "line_no": 708,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__exit__",
+                        "line_no": 708,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 711,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 711,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 719,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 719,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 727,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__repr__",
+                        "line_no": 727,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__bool__",
+                        "line_no": 730,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__bool__",
+                        "line_no": 730,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__nonzero__",
+                        "line_no": 740,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__nonzero__",
+                        "line_no": 740,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__iter__",
+                        "line_no": 750,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__iter__",
+                        "line_no": 750,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "ok",
+                        "line_no": 755,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "ok",
+                        "line_no": 755,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "is_redirect",
+                        "line_no": 770,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "is_redirect",
+                        "line_no": 770,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "is_permanent_redirect",
+                        "line_no": 777,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "is_permanent_redirect",
+                        "line_no": 777,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "next",
+                        "line_no": 785,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "next",
+                        "line_no": 785,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "apparent_encoding",
+                        "line_no": 790,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "apparent_encoding",
+                        "line_no": 790,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "iter_content",
+                        "line_no": 799,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "iter_content",
+                        "line_no": 799,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "generate",
+                        "line_no": 816,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "iter_lines",
+                        "line_no": 857,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "iter_lines",
+                        "line_no": 857,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "content",
+                        "line_no": 891,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "content",
+                        "line_no": 891,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "text",
+                        "line_no": 910,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "text",
+                        "line_no": 910,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "json",
+                        "line_no": 947,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "json",
+                        "line_no": 947,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "links",
+                        "line_no": 983,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "links",
+                        "line_no": 983,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "raise_for_status",
+                        "line_no": 999,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "raise_for_status",
+                        "line_no": 999,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 1028,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 1028,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    }
+                ],
+                "code_size": {
+                    "total_lines": 1039,
+                    "non_blank_lines": 741,
+                    "func_count": 87
+                },
+                "naming_issues": []
+            },
+            "pep8": {
+                "total_issues": 0,
+                "issues": [],
+                "severity": "低"
+            },
+            "complexity": {
+                "cyclomatic_complexity": [
+                    {
+                        "function": "M",
+                        "complexity": 137,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 409,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 494,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "RequestEncodingMixin",
+                        "complexity": 84,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 107,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 857,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 947,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 258,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 799,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 207,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 588,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 891,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 999,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "RequestHooksMixin",
+                        "complexity": 206,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "PreparedRequest",
+                        "complexity": 313,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 572,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "Request",
+                        "complexity": 230,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "Response",
+                        "complexity": 640,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 910,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 983,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 86,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 483,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 610,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 630,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 711,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 1028,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 218,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 382,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 393,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 400,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 719,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 755,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 770,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 777,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 790,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 292,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 295,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 334,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 351,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 379,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 658,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 705,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 708,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 727,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 730,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 740,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 750,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 785,
+                        "risk": "高"
+                    }
+                ],
+                "max_complexity": 1028,
+                "sloc": {},
+                "complexity_risk": "高"
+            },
+            "security": {
+                "total_issues": 0,
+                "issues": [],
+                "risk": "低"
+            }
+        },
+        "api.py": {
+            "path": "C:\\Users\\33086\\PyCharmMiscProject\\.venv\\Lib\\site-packages\\requests\\api.py",
+            "basic": {
+                "dependencies": {
+                    "internal": [],
+                    "external": []
+                },
+                "functions": [
+                    {
+                        "name": "request",
+                        "line_no": 14,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get",
+                        "line_no": 62,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "options",
+                        "line_no": 76,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "head",
+                        "line_no": 88,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "post",
+                        "line_no": 103,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "put",
+                        "line_no": 118,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "patch",
+                        "line_no": 133,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "delete",
+                        "line_no": 148,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    }
+                ],
+                "code_size": {
+                    "total_lines": 157,
+                    "non_blank_lines": 117,
+                    "func_count": 8
+                },
+                "naming_issues": []
+            },
+            "pep8": {
+                "total_issues": 0,
+                "issues": [],
+                "severity": "低"
+            },
+            "complexity": {
+                "cyclomatic_complexity": [
+                    {
+                        "function": "request",
+                        "complexity": 14,
+                        "risk": "中"
+                    },
+                    {
+                        "function": "get",
+                        "complexity": 62,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "options",
+                        "complexity": 76,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "head",
+                        "complexity": 88,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "post",
+                        "complexity": 103,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "put",
+                        "complexity": 118,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "patch",
+                        "complexity": 133,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "delete",
+                        "complexity": 148,
+                        "risk": "高"
+                    }
+                ],
+                "max_complexity": 148,
+                "sloc": {},
+                "complexity_risk": "高"
+            },
+            "security": {
+                "total_issues": 0,
+                "issues": [],
+                "risk": "低"
+            }
+        },
+        "adapters.py": {
+            "path": "C:\\Users\\33086\\PyCharmMiscProject\\.venv\\Lib\\site-packages\\requests\\adapters.py",
+            "basic": {
+                "dependencies": {
+                    "internal": [],
+                    "external": [
+                        "auth",
+                        "compat",
+                        "cookies",
+                        "exceptions",
+                        "models",
+                        "os",
+                        "socket",
+                        "structures",
+                        "typing",
+                        "urllib3",
+                        "utils",
+                        "warnings"
+                    ]
+                },
+                "functions": [
+                    {
+                        "name": "SOCKSProxyManager",
+                        "line_no": 62,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "_urllib3_request_context",
+                        "line_no": 76,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 116,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 116,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 119,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 119,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 138,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 138,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 178,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 178,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 200,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__getstate__",
+                        "line_no": 200,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 203,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__setstate__",
+                        "line_no": 203,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "init_poolmanager",
+                        "line_no": 216,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "init_poolmanager",
+                        "line_no": 216,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "proxy_manager_for",
+                        "line_no": 242,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "proxy_manager_for",
+                        "line_no": 242,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "cert_verify",
+                        "line_no": 280,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "cert_verify",
+                        "line_no": 280,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "build_response",
+                        "line_no": 336,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "build_response",
+                        "line_no": 336,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "build_connection_pool_key_attributes",
+                        "line_no": 373,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "build_connection_pool_key_attributes",
+                        "line_no": 373,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get_connection_with_tls_context",
+                        "line_no": 423,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "get_connection_with_tls_context",
+                        "line_no": 423,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "get_connection",
+                        "line_no": 472,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "get_connection",
+                        "line_no": 472,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 513,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "close",
+                        "line_no": 513,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "request_url",
+                        "line_no": 523,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "request_url",
+                        "line_no": 523,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "add_headers",
+                        "line_no": 555,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "add_headers",
+                        "line_no": 555,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "proxy_headers",
+                        "line_no": 569,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "proxy_headers",
+                        "line_no": 569,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 590,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "send",
+                        "line_no": 590,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    }
+                ],
+                "code_size": {
+                    "total_lines": 696,
+                    "non_blank_lines": 572,
+                    "func_count": 38
+                },
+                "naming_issues": [
+                    "函数名SOCKSProxyManager不符合小写+下划线规范"
+                ]
+            },
+            "pep8": {
+                "total_issues": 0,
+                "issues": [],
+                "severity": "低"
+            },
+            "complexity": {
+                "cyclomatic_complexity": [
+                    {
+                        "function": "M",
+                        "complexity": 590,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 280,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "_urllib3_request_context",
+                        "complexity": 76,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 523,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "HTTPAdapter",
+                        "complexity": 143,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 423,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 242,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 472,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "BaseAdapter",
+                        "complexity": 113,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 178,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 200,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 203,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 336,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 513,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 569,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "SOCKSProxyManager",
+                        "complexity": 62,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 116,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 119,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 138,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 216,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 373,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 555,
+                        "risk": "高"
+                    }
+                ],
+                "max_complexity": 590,
+                "sloc": {},
+                "complexity_risk": "高"
+            },
+            "security": {
+                "total_issues": 0,
+                "issues": [],
+                "risk": "低"
+            }
+        },
+        "exceptions.py": {
+            "path": "C:\\Users\\33086\\PyCharmMiscProject\\.venv\\Lib\\site-packages\\requests\\exceptions.py",
+            "basic": {
+                "dependencies": {
+                    "internal": [],
+                    "external": [
+                        "compat",
+                        "urllib3"
+                    ]
+                },
+                "functions": [
+                    {
+                        "name": "__init__",
+                        "line_no": 17,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 17,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 34,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__init__",
+                        "line_no": 34,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    },
+                    {
+                        "name": "__reduce__",
+                        "line_no": 44,
+                        "is_class_method": true,
+                        "type": "类方法"
+                    },
+                    {
+                        "name": "__reduce__",
+                        "line_no": 44,
+                        "is_class_method": false,
+                        "type": "普通函数"
+                    }
+                ],
+                "code_size": {
+                    "total_lines": 151,
+                    "non_blank_lines": 91,
+                    "func_count": 6
+                },
+                "naming_issues": []
+            },
+            "pep8": {
+                "total_issues": 0,
+                "issues": [],
+                "severity": "低"
+            },
+            "complexity": {
+                "cyclomatic_complexity": [
+                    {
+                        "function": "RequestException",
+                        "complexity": 12,
+                        "risk": "中"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 17,
+                        "risk": "中"
+                    },
+                    {
+                        "function": "JSONDecodeError",
+                        "complexity": 31,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "InvalidJSONError",
+                        "complexity": 27,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 34,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "M",
+                        "complexity": 44,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "HTTPError",
+                        "complexity": 55,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ConnectionError",
+                        "complexity": 59,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ProxyError",
+                        "complexity": 63,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "SSLError",
+                        "complexity": 67,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "Timeout",
+                        "complexity": 71,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ConnectTimeout",
+                        "complexity": 80,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ReadTimeout",
+                        "complexity": 87,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "URLRequired",
+                        "complexity": 91,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "TooManyRedirects",
+                        "complexity": 95,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "MissingSchema",
+                        "complexity": 99,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "InvalidSchema",
+                        "complexity": 103,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "InvalidURL",
+                        "complexity": 107,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "InvalidHeader",
+                        "complexity": 111,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "InvalidProxyURL",
+                        "complexity": 115,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ChunkedEncodingError",
+                        "complexity": 119,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "ContentDecodingError",
+                        "complexity": 123,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "StreamConsumedError",
+                        "complexity": 127,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "RetryError",
+                        "complexity": 131,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "UnrewindableBodyError",
+                        "complexity": 135,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "RequestsWarning",
+                        "complexity": 142,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "FileModeWarning",
+                        "complexity": 146,
+                        "risk": "高"
+                    },
+                    {
+                        "function": "RequestsDependencyWarning",
+                        "complexity": 150,
+                        "risk": "高"
+                    }
+                ],
+                "max_complexity": 150,
+                "sloc": {},
+                "complexity_risk": "高"
+            },
+            "security": {
+                "total_issues": 0,
+                "issues": [],
+                "risk": "低"
+            }
+        }
+    }
+}
