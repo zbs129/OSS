@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Requests库双维度分析：历史提交信息统计 + Bug提交规律分析
-【最终稳定版】修复_rebuild()错误+中文显示正常+无警告
-"""
+
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
