@@ -456,6 +456,44 @@ def visualize_analysis_results(commit_df, bug_df):
 
     print("✅  所有图表生成完成！")
 
+
+# ========== 新增维度可视化 ==========
+def visualize_new_dimensions(commit_df, bug_df):
+    """新增维度可视化（性能/安全/API稳定性）"""
+    output_dir = "two_dimension_analysis_visuals"
+    system = platform.system()
+    if system == "Windows":
+        font_prop = FontProperties(fname="C:/Windows/Fonts/simhei.ttf")
+    elif system == "macOS":
+        font_prop = FontProperties(fname="/System/Library/Fonts/PingFang.ttc")
+    else:
+        font_prop = FontProperties(name="WenQuanYi Zen Hei")
+
+    # 1. 性能优化提交占比饼图
+    if not commit_df.empty:
+        perf_keywords = ["perf", "performance", "优化", "性能"]
+        perf_commits = commit_df[commit_df["message"].str.contains('|'.join(perf_keywords), case=False, na=False)]
+        non_perf = len(commit_df) - len(perf_commits)
+        plt.figure(figsize=(8, 6))
+        plt.pie([len(perf_commits), non_perf], labels=["性能优化提交", "其他提交"], 
+                autopct="%1.1f%%", colors=['#FF9999', '#66B2FF'], startangle=90)
+        plt.title("性能优化提交占比", fontproperties=font_prop, fontsize=14)
+        plt.savefig(f"{output_dir}/perf_commit_dist.png", dpi=300, bbox_inches='tight')
+        plt.close()
+
+    # 2. 安全类Bug占比饼图
+    if not bug_df.empty:
+        security_bug_keywords = ["security", "安全", "漏洞", "ssl"]
+        security_bugs = bug_df[bug_df["title"].str.contains('|'.join(security_bug_keywords), case=False, na=False)]
+        non_security = len(bug_df) - len(security_bugs)
+        plt.figure(figsize=(8, 6))
+        plt.pie([len(security_bugs), non_security], labels=["安全类Bug", "普通Bug"], 
+                autopct="%1.1f%%", colors=['#FF6666', '#99CC99'], startangle=90)
+        plt.title("安全类Bug占比", fontproperties=font_prop, fontsize=14)
+        plt.savefig(f"{output_dir}/security_bug_dist.png", dpi=300, bbox_inches='tight')
+        plt.close()
+
+
 # ========== 数据保存 ==========
 def save_analysis_data(commit_df, bug_df):
     """保存分析数据至CSV，便于后续深度分析"""
