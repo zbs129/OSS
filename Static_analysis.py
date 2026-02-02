@@ -52,7 +52,11 @@ logger = logging.getLogger(__name__)
 
 # ===================== 基础层分析：依赖/函数/代码规模 =====================
 def get_requests_core_modules():
-    """自动定位requests核心模块文件路径"""
+     """
+    自动定位requests核心模块文件路径（原有功能，新增详细注释）
+    :return: 核心模块信息列表，每个元素为dict：{name: 模块名, path: 绝对路径, dir: 模块所在目录}
+    异常处理：未找到requests库则退出，未找到核心模块则退出
+    """
     try:
         requests_module = import_module("requests")
         requests_path = os.path.dirname(requests_module.__file__)
@@ -79,7 +83,15 @@ def get_requests_core_modules():
 
 
 def parse_module_dependencies_and_functions(module_info):
-    """解析模块依赖、函数列表、代码规模"""
+    """
+    解析模块依赖、函数列表、代码规模（原有功能，新增详细注释）
+    :param module_info: 模块信息dict（包含name/path/dir）
+    :return: 解析结果dict，包含：
+        - dependencies: {internal: 内部依赖列表, external: 外部依赖列表}
+        - functions: 函数信息列表
+        - code_size: 代码规模统计
+        - naming_issues: 命名规范问题列表
+    """
     module_path = module_info["path"]
     module_name = module_info["name"]
 
