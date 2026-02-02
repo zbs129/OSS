@@ -311,6 +311,52 @@ def analyze_bug_rules(bug_df):
     print(f"   平均每个Bug讨论数：{avg_comments:.2f}条")
     print(f"   最高讨论度Bug：《{bug_df.loc[max_comments_idx, 'title']}》（{bug_df['comments'].max()}条评论）")
 
+# ========== 第三维度：性能分析 ==========
+def analyze_performance(commit_df):
+    """Requests性能相关分析（基于提交信息中的性能优化关键词+代码修改规模）"""
+    print("\n" + "=" * 50)
+    print("【第三维度：性能分析】")
+    print("=" * 50)
+
+    if commit_df.empty:
+        print("⚠️  无有效提交数据，跳过性能分析")
+        return
+
+    # 1. 性能优化提交统计
+    perf_keywords = ["perf", "performance", "optimize", "优化", "性能", "speed", "fast", "耗时", "延迟"]
+    perf_commits = commit_df[commit_df["message"].str.contains('|'.join(perf_keywords), case=False, na=False)]
+    print(f"\n1. 性能优化提交数：{len(perf_commits)}（占总提交{len(perf_commits)/len(commit_df)*100:.2f}%）")
+    
+    # 2. 性能相关代码修改规模
+    if not perf_commits.empty:
+        avg_perf_changes = perf_commits["total_changes"].mean()
+        print(f"2. 性能优化提交平均修改行数：{avg_perf_changes:.2f}行")
+        max_perf_commit = perf_commits.loc[perf_commits["total_changes"].idxmax()]
+        print(f"3. 最大规模性能优化提交：{max_perf_commit['hash']}（{max_perf_commit['total_changes']}行修改）")
+
+# ========== 第四维度：安全分析 ==========
+def analyze_security(commit_df, bug_df):
+    """Requests安全相关分析（安全修复提交+漏洞类Bug）"""
+    print("\n" + "=" * 50)
+    print("【第四维度：安全分析】")
+    print("=" * 50)
+
+    # 1. 安全修复提交统计
+    if not commit_df.empty:
+        security_keywords = ["security", "safe", "漏洞", "安全", "auth", "认证", "加密", "ssl", "tls", "csrf", "xss"]
+        security_commits = commit_df[commit_df["message"].str.contains('|'.join(security_keywords), case=False, na=False)]
+        print(f"\n1. 安全修复提交数：{len(security_commits)}（占总提交{len(security_commits)/len(commit_df)*100:.2f}%）")
+    
+    # 2. 安全类Bug统计
+    if not bug_df.empty:
+        security_bug_keywords = ["security", "safe", "漏洞", "安全", "auth", "ssl", "tls"]
+        security_bugs = bug_df[bug_df["title"].str.contains('|'.join(security_bug_keywords), case=False, na=False)]
+        print(f"2. 安全类Bug数：{len(security_bugs)}（占总Bug{len(security_bugs)/len(bug_df)*100:.2f}%）")
+        if not security_bugs.empty:
+            closed_security_bugs = security_bugs[security_bugs["state"] == "closed"]
+            print(f"3. 已修复安全类Bug：{len(closed_security_bugs)}（修复率{len(closed_security_bugs)/len(security_bugs)*100:.2f}%）")
+
+
 # ========== 可视化层（分维度生成图表） ==========
 def visualize_analysis_results(commit_df, bug_df):
     """分维度生成可视化图表"""
