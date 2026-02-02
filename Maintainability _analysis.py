@@ -3,7 +3,7 @@ import re
 from typing import List, Optional, Dict, Final
 from pathlib import Path
 
-
+# 配置常量 - 便于统一维护和修改
 SCORE_DEDUCTIONS: Final[Dict[str, int]] = {
     "file_not_found": 50,
     "xml_parse_error": 80,
