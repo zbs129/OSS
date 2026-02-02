@@ -38,6 +38,17 @@ CORE_MODULES = [
 # 忽略的flake8检查项（可根据需求调整）
 FLAKE8_IGNORE = "E501,W503"  # 忽略行超长、换行位置警告
 
+# ===================== 新增：脚本基础配置=====================
+# 脚本版本标识
+SCRIPT_VERSION = "v2.1.0"
+# 日志配置
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[logging.NullHandler()]  # 空处理器，不输出日志
+)
+logger = logging.getLogger(__name__)
+
 
 # ===================== 基础层分析：依赖/函数/代码规模 =====================
 def get_requests_core_modules():
