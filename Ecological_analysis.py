@@ -1,19 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Requests库生态深度分析（最终版）
-新增：完整的贡献者可视化模块（核心贡献者占比/活跃度分布/贡献量排名）
-"""
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-from matplotlib.font_manager import FontProperties
-from datetime import datetime
-import os
-import platform
-import warnings
-import sys
-import numpy as np
+
 
 # ========== 基础配置 ==========
 if sys.version_info >= (3, 10):
