@@ -49,6 +49,31 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# ===================== 新增：辅助校验函数（仅校验） =====================
+def validate_core_modules(module_list):
+    """
+    校验核心模块列表的合法性
+    :param module_list: 待校验的模块列表（dict列表）
+    :return: 校验结果（bool），错误信息列表
+    """
+    errors = []
+    if not isinstance(module_list, list):
+        errors.append("核心模块列表必须为列表类型")
+        return False, errors
+    for idx, module in enumerate(module_list):
+        if not isinstance(module, dict):
+            errors.append(f"第{idx+1}个模块必须为字典类型")
+        else:
+            required_keys = ["name", "path", "dir"]
+            missing_keys = [k for k in required_keys if k not in module]
+            if missing_keys:
+                errors.append(f"第{idx+1}个模块缺少必要字段：{','.join(missing_keys)}")
+            if "path" in module and not os.path.exists(module["path"]):
+                errors.append(f"模块{module.get('name', '未知')}路径不存在：{module['path']}")
+    if errors:
+        print(f"⚠️  核心模块校验发现{len(errors)}个非阻断性问题：{'; '.join(errors)}")
+    return len(errors) == 0, errors
+
 
 # ===================== 基础层分析：依赖/函数/代码规模 =====================
 def get_requests_core_modules():
