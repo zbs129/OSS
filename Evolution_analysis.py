@@ -14,7 +14,7 @@ import warnings
 # ========== 核心修复1：关闭所有Matplotlib相关警告 ==========
 warnings.filterwarnings('ignore', category=UserWarning, module='matplotlib')
 warnings.filterwarnings('ignore', category=DeprecationWarning, module='matplotlib')
-
+# ========== 核心修复2：强制配置中文字体（适配所有Matplotlib版本） ==========
 def force_set_chinese_font():
     """强制设置中文字体，绕过PyCharm后端限制，适配新旧版Matplotlib"""
     # 方案1：直接指定系统中文字体（Windows优先）
