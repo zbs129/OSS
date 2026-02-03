@@ -3,16 +3,7 @@ import re
 from typing import List, Optional, Dict, Final
 from pathlib import Path
 
-# 配置常量 - 便于统一维护和修改
-SCORE_DEDUCTIONS: Final[Dict[str, int]] = {
-    "file_not_found": 50,
-    "xml_parse_error": 80,
-    "unknown_load_error": 30,
-    "invalid_version_format": 10,
-    "sdk_special_chars": 15,
-    "duplicate_component": 20,
-    "python_version_too_low": 10
-}
+
 
 # 版本常量
 MIN_SUPPORTED_PYTHON_VERSION: Final[float] = 3.8
@@ -280,3 +271,4 @@ if __name__ == "__main__":
         print("\n📄 报告已保存至: xml_maintainability_report.md")
     except Exception as e:
         print(f"❌ 分析执行失败: {str(e)}")
+
