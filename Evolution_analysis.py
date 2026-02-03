@@ -12,7 +12,6 @@ import os
 import platform
 import warnings
 
-# ========== 核心修复1：关闭所有Matplotlib相关警告 ==========
 warnings.filterwarnings('ignore', category=UserWarning, module='matplotlib')
 warnings.filterwarnings('ignore', category=DeprecationWarning, module='matplotlib')
 
